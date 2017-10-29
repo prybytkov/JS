@@ -23,7 +23,7 @@ var arr = [1, 2, 3, 4, 5];
 var arr = [2, 3, 4, 5];
 var mp = 1;
 
-    for (var a = 0, a < arr.length, a++) {
+    for (var a = 0; a < arr.length; a++) {
     mp *= arr[a];
     }
 
