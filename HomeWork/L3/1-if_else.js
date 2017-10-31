@@ -127,12 +127,16 @@ var arrLang = [];
 
    if (lang == "en"){
        arrLang = ['Mon,Tue,Wed,Thu,Fri,Sut,Sun']
+       // every element in array should be a separate element, so this array should have a 7 elements, but your array have only 1 element
+       // eg: arrLang = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sut", "Sun"]
           }
         else if ( lang == "de"){
        arrLang = ['PnDE,VtDE,SrDE,CheDE,PtDE,SbDE,VsDE']
+            // the same as in "en"
                  }
           else if (lang == "ru"){
             arrLang = ['Pn,Vt,Sr,Che,Pt,Sb,Vs']
+            // the same as in "en"
          }
 console.log(arrLang)
 //
@@ -169,6 +173,28 @@ var arrLang = [];
             else if (lang == "ru"){
              console.log(arrLang[0][2])
 }
+
+/*
+то есть чтобы создать многомерный массив у нас должно быть больше чем 1 уровень вложенности 
+то есь многомерный массив выглядит как то так:
+
+var arrM = [
+ [ 1, 2, 3],
+ [ 1, 2, 3],
+ [ 1, 2, 3]
+]
+
+и тогда у нас есть елементы 
+
+arrM[0][0] === 1
+arrM[0][2] === 3
+
+и тд
+
+теперь нужно тоже самое сделать но с месяцами =)
+
+
+*/
 
 
 
