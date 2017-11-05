@@ -52,18 +52,19 @@ range(1,3); // logs in console => 6
 // 4 task
 // Напишите функцию которая будет находить сумму простых чисел меньших переданному в нее значению. Пример работы:
 
-    // function getPrimesSumBelow(x) {
+     function getPrimesSumBelow(a) {
 
-        // var res = 0;
+      for (var i = a, result = 0; i > 1; i--) {
+             if ( "определяем простые числа:)" ) {
+                 result += i;
+             }
+         }
 
-//            for( var a = x; a/; a++) {
-//                 res += a;
-//             }
+         console.log(result);
+     }
 
-    // }
-
-// getPrimesSumBelow(10); // 2 + 3 + 5 + 7 = 17
- БЕДА=)
+getPrimesSumBelow(10); // 2 + 3 + 5 + 7 = 17
+//
 
 
 // 5 task
@@ -75,21 +76,37 @@ function odd(x) {
 
 // 6 task
 // Create a function that returns all odd numbers in range, use the previous function inside this one;
-БЕДА=)№2
+
+function allOdd (a, b) {
+
+    var oddArr = [];
+
+    if(a < b) {
+        for (var i = 0, j = a; j <= b; j++) {
+            if (odd(j) === true) {
+                oddArr[i] = j;
+                i++;
+            }
+        }
+    }
+
+    return oddArr;
+}
+
+           allOdd(1, 10);
 
 // 7 task
 // Create a function that will call promt window that will ask for a number to user, until he enters 9;
 
-function num(x) {
 
-    var x = +prompt('Number');
+function num() {
+    var x = +prompt("Number");
 
-    if (x !==9){
-       num ()
-    }           else {
-        alert("NINE!")
+    if (x !== 9) {
+        num();
+    } else {
+        alert("NINE!");
     }
-
 }
 
-num ()
+    num()
