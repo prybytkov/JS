@@ -52,10 +52,25 @@ range(1,3); // logs in console => 6
 // 4 task
 // Напишите функцию которая будет находить сумму простых чисел меньших переданному в нее значению. Пример работы:
 
-     function getPrimesSumBelow(a) {
+function isPrime(x) {
+
+    if ((x <= 3) && (x !== 1)) {
+        return true;
+    } else {
+        for (var y = 2; y < x; y++) {
+            if (x % y === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+
+function getPrimesSumBelow(a) {
 
       for (var i = a, result = 0; i > 1; i--) {
-             if ( "определяем простые числа:)" ) {
+             if ( isPrime(i) ) {
                  result += i;
              }
          }
@@ -64,7 +79,7 @@ range(1,3); // logs in console => 6
      }
 
 getPrimesSumBelow(10); // 2 + 3 + 5 + 7 = 17
-//
+
 
 
 // 5 task
