@@ -32,7 +32,7 @@ console.log(name);
 
 var customArray = [1,2,3];
 console.log(customArray);
-customArray[0]=5;
+customArray = 0;
 console.log(customArray);
 
 // 5
