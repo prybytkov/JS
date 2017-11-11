@@ -6,7 +6,7 @@ var r = '9' + 0; // "90" string
 
 var r = 9 + '0'; // "90" string
 
-var r = 4 + 9; // 9 number
+var r = 4 + 9; // 13 number
 
 var r = null + 7; // 7 number
 
@@ -31,8 +31,8 @@ var r = '6' + undefined; // "6undefined" string
 
 // Определите результат в следующих случаях:
 
-    var r;
-var t = ++2; // 3
+var r;
+var t = ++2; // 3 
 var u = 1++; // 1
 var w = 2--; // 2
 
@@ -40,11 +40,11 @@ r = 6 && 0 && 7; // 0
 
 r = -9 && -8; // -8
 
-r = 6 && 0 && 7;//0
+r = 6 && 0 && 7;// 0
 
-r = "string" && 0;//0
+r = "string" && 0;// 0
 
-r = [] && {} && 7; //7
+r = [] && {} && 7; // 7
 
 r = [] || 7; // []
 
