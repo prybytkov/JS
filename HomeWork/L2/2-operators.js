@@ -6,7 +6,7 @@ var r = '9' + 0; // "90" string
 
 var r = 9 + '0'; // "90" string
 
-var r = 4 + 9; // 9 number => but we will get 13 in the result and as a number
+var r = 4 + 9; // 13 number
 
 var r = null + 7; // 7 number
 
