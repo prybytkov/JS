@@ -85,5 +85,4 @@ var arr = obj.h;
 
 obj.h[1] = 9;
 
-console.log(arr[1], obj.h[1]); // [9], [9]
-// тут будет просто 9 и 9, а не 9 в массиве
+console.log(arr[1], obj.h[1]); // [9]
