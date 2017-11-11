@@ -32,7 +32,7 @@ var r = '6' + undefined; // "6undefined" string
 // Определите результат в следующих случаях:
 
 var r;
-var t = ++2; // 3 
+var t = ++2; // 3
 var u = 1++; // 1
 var w = 2--; // 2
 
