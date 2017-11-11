@@ -33,6 +33,7 @@ console.log(name);
 var customArray = [1,2,3];
 console.log(customArray);
 customArray[0]=5;
+// здесь нужно было перезаписать значение всего массива на 0 а не только 1 элемент
 console.log(customArray);
 
 // 5
