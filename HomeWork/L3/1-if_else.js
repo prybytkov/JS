@@ -126,6 +126,7 @@ var lang = prompt("your lang");
 var arrLang = [];
 
    if (lang == "en"){
+<<<<<<< HEAD
        arrLang = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sut", "Sun"]
           }
         else if ( lang == "de"){
@@ -133,6 +134,19 @@ var arrLang = [];
                  }
           else if (lang == "ru"){
             arrLang = ['Pn', 'Vt', 'Sr', 'Che', 'Pt', 'Sb', 'Vs' ]
+=======
+       arrLang = ['Mon,Tue,Wed,Thu,Fri,Sut,Sun']
+       // every element in array should be a separate element, so this array should have a 7 elements, but your array have only 1 element
+       // eg: arrLang = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sut", "Sun"]
+          }
+        else if ( lang == "de"){
+       arrLang = ['PnDE,VtDE,SrDE,CheDE,PtDE,SbDE,VsDE']
+            // the same as in "en"
+                 }
+          else if (lang == "ru"){
+            arrLang = ['Pn,Vt,Sr,Che,Pt,Sb,Vs']
+            // the same as in "en"
+>>>>>>> 92d992f5b3cbaec3eb94bc235f371696357a0d49
          }
 console.log(arrLang)
 //
@@ -173,9 +187,6 @@ var arrLang = [];
             else if (lang == "ru"){
              console.log(arrLang[0][2])
 }
-
-
-
 
 
 
