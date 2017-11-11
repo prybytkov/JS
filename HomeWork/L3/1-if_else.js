@@ -126,13 +126,13 @@ var lang = prompt("your lang");
 var arrLang = [];
 
    if (lang == "en"){
-       arrLang = ['Mon,Tue,Wed,Thu,Fri,Sut,Sun']
+       arrLang = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sut", "Sun"]
           }
         else if ( lang == "de"){
-       arrLang = ['PnDE,VtDE,SrDE,CheDE,PtDE,SbDE,VsDE']
+       arrLang = ['PnDE', 'VtDE', 'SrDE', 'CheDE', 'PtDE', 'SbDE', 'VsDE']
                  }
           else if (lang == "ru"){
-            arrLang = ['Pn,Vt,Sr,Che,Pt,Sb,Vs']
+            arrLang = ['Pn', 'Vt', 'Sr', 'Che', 'Pt', 'Sb', 'Vs' ]
          }
 console.log(arrLang)
 //
@@ -140,15 +140,19 @@ console.log(arrLang)
 //
 var lang = prompt("your lang");
 
+    arrLangEn = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sut", "Sun"];
+    arrLangDe = ['PnDE', 'VtDE', 'SrDE', 'CheDE', 'PtDE', 'SbDE', 'VsDE'];
+    arrLangRu = ['Pn', 'Vt', 'Sr', 'Che', 'Pt', 'Sb', 'Vs' ];
+
 switch (lang) {
     case "en":
-        alert('Mon,Tue,Wed,Thu,Fri,Sut,Sun')
+        alert( arrLangEn )
         break;
     case "de":
-        alert('PnDE,VtDE,SrDE,CheDE,PtDE,SbDE,VsDE')
+        alert( arrLangDe )
         break;
     case "ru":
-        alert('Pn,Vt,Sr,Che,Pt,Sb,Vs')
+        alert( arrLangRu )
         break;
     default:
         alert("en,de,ru - only!")
@@ -159,7 +163,7 @@ switch (lang) {
 //
 var lang = prompt("your lang");
 var arrLang = [];
-    arrLang[0] = ['Mon,Tue,Wed,Thu,Fri,Sut,Sun','PnDE,VtDE,SrDE,CheDE,PtDE,SbDE,VsDE','Pn,Vt,Sr,Che,Pt,Sb,Vs'];
+    arrLang[0] = [["Mon", "Tue", "Wed", "Thu", "Fri", "Sut", "Sun"],['PnDE', 'VtDE', 'SrDE', 'CheDE', 'PtDE', 'SbDE', 'VsDE'],['Pn', 'Vt', 'Sr', 'Che', 'Pt', 'Sb', 'Vs' ]];
          if (lang == "en"){
              console.log(arrLang[0][0])
 }
