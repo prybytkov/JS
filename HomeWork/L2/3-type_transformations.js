@@ -85,4 +85,5 @@ var arr = obj.h;
 
 obj.h[1] = 9;
 
+
 console.log(arr[1], obj.h[1]); // 9
